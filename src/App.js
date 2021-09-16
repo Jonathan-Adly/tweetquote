@@ -16,7 +16,7 @@ function App() {
           setIsLoaded(true);
           setQuotes(result.content);
           setAuthor(result.author)
-          setLink(`https://www.twitter.com/intent/tweet?text=${result.content}%0D%0A%0D%0A${result.author}`)
+          setLink(`https://www.twitter.com/intent/tweet?text=%22${result.content}%22%0D%0A%0D%0A${result.author}`)
         },
         (error) => {
           setIsLoaded(true);
